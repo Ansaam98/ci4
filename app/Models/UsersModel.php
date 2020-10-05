@@ -48,7 +48,7 @@ class UsersModel extends Model{
         
         }
 
-    public function datatable(){
+    public function datatable(string $username , string $password , string $firstname , string $lastname , string $email){
 
         $username = $builder->select('username');
         $password = $builder->select('password');
